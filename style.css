@@ -1,0 +1,93 @@
+body {
+  background-color: blueviolet;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  position: relative;
+  top: 100px;
+  left: 0;
+  background-color: rgb(249, 249, 249);
+  width: 600px;
+  height: auto;
+  margin: 0 auto; 
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+#container #head {
+  color: blueviolet;
+}
+
+#container #add-task input {
+  width: 400px;
+  height: 30px;
+  margin-top: 40px;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  font-size: 19px;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+#container #add-task button {
+  width: 80px;
+  height: 45px;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+  background-color: blueviolet;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#items ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 50px;
+}
+
+#items ul li {
+  margin-bottom: 20px;
+  height: 30px;
+  margin-right: 40px;
+  height: 50px;
+  border: 1px solid blueviolet;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#items ul li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+#items ul i {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#items ul i:hover {
+  color: #ff1a1a;
+}
+
+#items ul input {
+  float: left;
+  margin-left: 20px;
+  cursor: pointer;
+  padding-top: 150px;
+}
+
+#items ul li span {
+  margin-left: 15px;
+  width: 80%;
+  font-size: 18px;
+}
